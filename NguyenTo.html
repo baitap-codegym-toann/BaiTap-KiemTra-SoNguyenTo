@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyên Tố</title>
+</head>
+<body>
+<script>
+    let number = Number(prompt("nhập số",));
+    function check() {
+        let isNguyenTo = 0;
+        for (let i = 2; i < (number / 2); i++) {
+            isNguyenTo = 1;
+            if (number % i === 0) {
+                isNguyenTo = 0;
+                break;
+            }
+            return isNguyenTo;
+        }
+    }
+    (check() === 1)? alert(number + " là số nguyên tố"):alert( number +" không phải số nguyên tố");
+</script>
+
+</body>
+</html>
